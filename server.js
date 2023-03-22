@@ -1,5 +1,6 @@
 import Fastify from 'fastify'
 import route1 from './routes/route1.js'
+import route1 from './routes/route1.js'
 
 const fastify = Fastify({
   logger: true
@@ -10,7 +11,7 @@ const fastify = Fastify({
   })
 
 fastify.register(route1) 
-
+fastify.register(route2)
   /**
    * Run the server!
    */
